@@ -70,7 +70,7 @@ export const FileUpload = ({
         onChange(res?.[0].url);
       }}
       onUploadError={(error: Error) => {
-        console.log("Upload error", error);
+        console.log(error);
       }}
     />
   )

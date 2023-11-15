@@ -16,6 +16,6 @@ export const ourFileRouter = {
   messageFile: f(["image", "pdf"])
     .middleware(() => handleAuth())
     .onUploadComplete(() => {})
-}
+} satisfies FileRouter;
  
 export type OurFileRouter = typeof ourFileRouter;
